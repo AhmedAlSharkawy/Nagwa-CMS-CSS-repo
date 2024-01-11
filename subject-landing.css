@@ -4501,6 +4501,10 @@ span.error {
   margin-top: 0px !important;
 }
 
+.m-t-60 {
+  margin-top: 60px !important;
+}
+
 .no-padding {
   padding: 0 !important;
 }
@@ -4508,6 +4512,10 @@ span.error {
 .disabled {
   pointer-events: none;
   opacity: 0.5;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .times {
@@ -5093,6 +5101,20 @@ a.btn {
 }
 .btn.btn-green.btn-outline:hover {
   background: #78b517;
+  color: #ffffff;
+}
+.btn.btn-red {
+  background: #e74c3c;
+}
+.btn.btn-red:hover {
+  background: #ea6153;
+}
+.btn.btn-red.btn-outline {
+  border-color: #e74c3c;
+  color: #e74c3c;
+}
+.btn.btn-red.btn-outline:hover {
+  background: #e74c3c;
   color: #ffffff;
 }
 .btn.btn-white {
@@ -6443,6 +6465,16 @@ select option {
   text-transform: none;
   font-size: 1.8rem;
   font-weight: normal;
+}
+.subject-tutor-card__cta .btn.btn-red {
+  background-color: transparent;
+  color: #e74c3c;
+  border: 1px solid #e74c3c;
+}
+.subject-tutor-card__cta .btn.btn-red:hover {
+  opacity: 0.8;
+  background-color: #e74c3c;
+  color: #fff;
 }
 @media screen and (max-width: 426px) {
   .subject-tutor-card__cta .btn {

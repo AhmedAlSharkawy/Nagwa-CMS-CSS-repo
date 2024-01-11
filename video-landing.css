@@ -4604,9 +4604,17 @@ span.error {
   margin-bottom: 15px !important;
 }
 
+.m-t-60 {
+  margin-top: 60px !important;
+}
+
 .disabled {
   pointer-events: none;
   opacity: 0.5;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .times {
@@ -4932,6 +4940,20 @@ a.btn {
 }
 .btn.btn-green.btn-outline:hover {
   background: #78b517;
+  color: #ffffff;
+}
+.btn.btn-red {
+  background: #e74c3c;
+}
+.btn.btn-red:hover {
+  background: #ea6153;
+}
+.btn.btn-red.btn-outline {
+  border-color: #e74c3c;
+  color: #e74c3c;
+}
+.btn.btn-red.btn-outline:hover {
+  background: #e74c3c;
   color: #ffffff;
 }
 .btn.btn-white {
