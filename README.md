@@ -1,6 +1,0 @@
-- This Reposatory includes the updated style file sheets for each page in Nagwa CMS
-- Each html page has 3 files:
-  ----------------------------
-- [page].css
-- [page]-min.css
-- [page]_critical.css

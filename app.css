@@ -1697,7 +1697,7 @@ body.show-mobile-nav a.toggle-mobile-nav span:last-child {
 @media screen and (max-width: 991px) {
   .app-banner .download-options__mobile-icons li,
   .download-banner .download-options__mobile-icons li {
-    width: 9.5rem;
+    width: 12rem;
   }
 }
 .layout-ltr .app-banner .download-options > div,
@@ -1745,9 +1745,9 @@ body.show-mobile-nav a.toggle-mobile-nav span:last-child {
 }
 @media screen and (max-width: 991px) {
   .app-banner__body,
-  .app-banner__body .app-banner__body-container,
+  .app-banner__body .container,
   .download-banner__body,
-  .download-banner__body .app-banner__body-container {
+  .download-banner__body .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -4687,8 +4687,6 @@ div.global-wrapper {
       -ms-flex-direction: column;
           flex-direction: column;
   min-height: 100%;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
 }
 .app-content-ltr div.globalWrapper,
 .app-content-ltr div.global-wrapper {
@@ -6065,8 +6063,12 @@ button::-moz-focus-inner {
   top: 1px;
 }
 
-.mfp-close-btn-in .mfp-close {
+.mfp-close-btn-in .mfp-close, .mfp-close__dark {
   color: #333;
+}
+
+.mfp-close__light {
+  color: #fff;
 }
 
 .mfp-image-holder .mfp-close,
@@ -10676,8 +10678,6 @@ li math-field[default-mode=inline-math] {
   font-weight: normal;
   font-size: 1.6rem;
   text-align: center;
-}
-.app-content-rtl .title-header__sub-title {
   margin-top: 0.5rem;
 }
 .title-header__sub-title * {
@@ -13986,6 +13986,9 @@ a.btn {
   background: transparent;
   color: #026bb0;
 }
+.btn.btn-primary.btn-link:hover {
+  background: transparent;
+}
 .btn.btn-green {
   background: #78b517;
 }
@@ -14054,6 +14057,7 @@ a.btn {
 }
 .btn.btn-red.btn-link:hover {
   color: #e43725;
+  background: transparent;
 }
 .btn.btn-pink {
   background: #e51d74;
@@ -14092,6 +14096,7 @@ a.btn {
 .btn.btn-white.btn-outline {
   border-color: #ffffff;
   color: #ffffff;
+  background: 0 0;
 }
 .btn.btn-white.btn-outline:hover {
   background: rgba(255, 255, 255, 0.2);
@@ -27277,6 +27282,29 @@ a.grade-cards__title.purple:hover {
 }
 .band--blue {
   background-color: #026bb0;
+}
+
+.note {
+  padding: 1.8rem;
+  font-family: "NotoSans/DroidArabicNaskh", sans-serif;
+  text-align: center;
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.4rem;
+}
+.note.note--yellow {
+  background-color: #ffeccb;
+}
+.more-info .note {
+  margin-bottom: 1rem;
 }
 
 .badges {
